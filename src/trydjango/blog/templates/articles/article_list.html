@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>hello</p>
+{% comment %} {{object_list}} {% endcomment %}
+
+{% for instance in object_list %}
+    <P>{{ instant.title}} - <a href="instance.get_absolute_url">{{ instant.title}}</a></P>
+
+{% endfor %}
+
+{% endblock content %}
